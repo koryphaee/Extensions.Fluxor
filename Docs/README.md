@@ -4,7 +4,6 @@
 
 One thing that bothers me about Fluxor is the lack of type safety: an action is just an `object`.
 This can lead to bugs when you accidentally pass a random object instead of the correct action to the dispatcher.
-The same goes for states, when using it for some generic magic.
 
 For this reason Fluxor.Extensions provides the following marker interfaces:
 
@@ -16,8 +15,8 @@ These markers are consistently used in generic constraints which should make it 
 
 ## Reducible actions
 
-In Fluxor you have actions and reducers and most of the time they have a 1:1 relationship.
-While actions are state-agnostic by themself, a reducer effectively couples an action to a specific state.
+In Fluxor actions and reducers have a 1:1 relationship most of the time.
+While actions are state-agnostic by themselves, a reducer effectively couples an action to a specific state.
 Only the reducer knows how it should use the properties of the action to alter the state.
 Flxuor.Extensions allows you to express this tight coupling by using `IReducibleAction<TState>`.
 
@@ -81,9 +80,10 @@ It provides base classes for components that interact with Fluxor.Extensions.
 ### StateComponent
 
 The `StateComponent<TState>` hides `IState<TState>` and `IDispatcher` from the child class.
-It exposes the state value via an computed property that points to the state and dispatch functionality via multiple methods.
+Access to the state is provided via a computed property that points to the value of the state.
+Dispatch functionality is exposed via multiple methods.
 
-As opposed to `FluxorComponent` it doesn't use `IActionSubscriber`s and therefore no reflection.
+It is limited to a single state which makes it different from `FluxorComponent`.
 
 Make sure to call `base.OnInitialized()` when you override `OnInitialized()` or the component won't work.
 

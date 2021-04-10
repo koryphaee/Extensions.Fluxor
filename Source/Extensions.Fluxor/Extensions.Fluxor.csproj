@@ -7,12 +7,17 @@
     <RootNamespace>Koryphaee.Extensions.Fluxor</RootNamespace>
     <Nullable>enable</Nullable>
     <Authors>Koryphaee</Authors>
-    <Description></Description>
+    <Description>Extensions for Fluxor</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/koryphaee/Extensions.Fluxor</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Redux, Flux</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Fluxor" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
   </ItemGroup>
 
 </Project>

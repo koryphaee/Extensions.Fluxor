@@ -66,6 +66,8 @@ namespace Koryphaee.Extensions.Fluxor
 			timer.Dispose();
 
 			logger.LogDebug("Stopped regular action dispatcher for action {type}", actionType.Name);
+
+			GC.SuppressFinalize(this);
 		}
 	}
 }
