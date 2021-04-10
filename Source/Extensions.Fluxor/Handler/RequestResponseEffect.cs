@@ -7,7 +7,7 @@ namespace Koryphaee.Extensions.Fluxor.Handler
 	/// Base class for effects that have a request and response.
 	/// </summary>
 	public abstract class RequestResponseEffect<TRequest, TResponse> : Effect<TRequest>
-		where TRequest : IRequestMarker<TResponse>
+		where TRequest : IRequestMarker
 		where TResponse : IResponseMarker
 	{
 		public sealed override async Task HandleAsync(TRequest request, IDispatcher dispatcher)
