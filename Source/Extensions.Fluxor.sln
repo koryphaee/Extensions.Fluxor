@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Fluxor", "Extensions.Fluxor\Extensions.Fluxor.csproj", "{DF42ED5F-44FB-4FA3-9110-4BB7C504A72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions.Fluxor.Components", "Extensions.Fluxor.Components\Extensions.Fluxor.Components.csproj", "{7620235F-61A3-4D70-ABCD-3B52914DCEB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF42ED5F-44FB-4FA3-9110-4BB7C504A72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF42ED5F-44FB-4FA3-9110-4BB7C504A72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF42ED5F-44FB-4FA3-9110-4BB7C504A72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF42ED5F-44FB-4FA3-9110-4BB7C504A72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7620235F-61A3-4D70-ABCD-3B52914DCEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7620235F-61A3-4D70-ABCD-3B52914DCEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7620235F-61A3-4D70-ABCD-3B52914DCEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7620235F-61A3-4D70-ABCD-3B52914DCEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06E12D06-18EF-4E37-9691-16B07C4160FB}
+	EndGlobalSection
+EndGlobal

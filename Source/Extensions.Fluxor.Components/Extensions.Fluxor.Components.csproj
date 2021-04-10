@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Koryphaee.Extensions.Fluxor.Components</AssemblyName>
+    <RootNamespace>Koryphaee.Extensions.Fluxor.Components</RootNamespace>
+    <Nullable>enable</Nullable>
+    <Authors>Koryphaee</Authors>
+    <Product />
+    <Company>Koryphaee</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Extensions.Fluxor\Extensions.Fluxor.csproj" />
+  </ItemGroup>
+
+</Project>

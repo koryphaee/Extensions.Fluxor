@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Koryphaee.Extensions.Fluxor</AssemblyName>
+    <RootNamespace>Koryphaee.Extensions.Fluxor</RootNamespace>
+    <Nullable>enable</Nullable>
+    <Authors>Koryphaee</Authors>
+    <Description></Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fluxor" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>
