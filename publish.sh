@@ -1,7 +1,12 @@
 #!/bin/bash
 
-dotnet.exe build -c Release Source/
-dotnet.exe pack --output Packages Source/
+if [ $# -ne 1 ]
+then
+	echo "missing version X.Y.Z"
+	exit
+fi 
+
+dotnet.exe pack --output Packages/ Source/ /p:Version=$1
 
 key=$(cmd.exe /c echo %NuGetApiKey% | tr -d '\r')
 

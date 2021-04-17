@@ -12,7 +12,6 @@
     <RepositoryUrl>https://github.com/koryphaee/Extensions.Fluxor</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Redux, Flux</PackageTags>
-    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
